@@ -1,0 +1,96 @@
+.form__container {
+  max-width: 90%;
+  margin: 1em auto;
+}
+
+.form__container label {
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 1.8px;
+  margin-bottom: 0.5rem;
+}
+
+.form__name,
+.form__number,
+.form__expire,
+.form__security {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form__error {
+  border-color: red !important;
+}
+
+.form__error-pgraph {
+  color: red;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.form__name input,
+.form__number input,
+.form__expire input,
+.form__security input {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.form__expire {
+  max-width: 50%;
+}
+
+.form__expire-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__security {
+  min-width: 50%;
+}
+
+.form__expire input {
+  width: 90%;
+}
+
+.form__combined-section {
+  display: flex;
+}
+
+.form__button {
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 0.5rem;
+  background: #21092f;
+  padding: 1rem;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 477px) {
+  .form__container {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .form__container {
+    width: 40%;
+  }
+
+  .form {
+    max-width: 80%;
+  }
+
+  .form__error-pgraph {
+    font-size: 1rem;
+  }
+}

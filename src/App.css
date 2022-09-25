@@ -1,0 +1,29 @@
+.App-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 1068px) {
+  .App {
+    background: url("/public/bg-main-desktop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .App-container {
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

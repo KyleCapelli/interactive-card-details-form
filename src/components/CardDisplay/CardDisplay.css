@@ -1,0 +1,145 @@
+.card-display {
+  background: url("/public/bg-main-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-display__container {
+  max-width: 450px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+/* BACK CARD */
+
+.card-back__container {
+  max-width: 286px;
+  height: 157px;
+  margin: 0 0 0 auto;
+  background-image: url("/public/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.card-back__container p {
+  position: absolute;
+  color: white;
+  top: 4.5rem;
+  right: 2.5rem;
+  font-size: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.card-display__card-front-container {
+  margin-top: -4.3em;
+  padding: 1rem;
+  max-width: 286px;
+  height: 157px;
+  background-image: url("/public/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+/* FRONT CARD */
+
+.card-display__circle-container {
+  display: flex;
+  align-items: center;
+}
+
+.card-display__circle-1 {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+}
+
+.card-display__circle-2 {
+  width: 13.5px;
+  height: 13.5px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-left: 0.6rem;
+}
+
+.card-display__card-number {
+  margin-top: 2.5rem;
+  letter-spacing: 3.5px;
+  color: white;
+}
+
+.card-display__name {
+  text-transform: uppercase;
+}
+
+.card-display__card-details {
+  color: white;
+  margin-top: 1rem;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1px;
+}
+
+/* FIXING BACKGROUND ISSUE */
+
+@media only screen and (min-width: 477px) {
+  .card-display {
+    background: #21092f;
+  }
+}
+
+@media only screen and (min-width: 1068px) {
+  .card-display {
+    background: none;
+    width: 50%;
+  }
+
+  .card-back__container {
+    height: 245px;
+    max-width: 447px;
+    bottom: -220px;
+    left: 70px;
+  }
+
+  .card-back__container p {
+    font-size: 1.2rem;
+    top: 6.8rem;
+    right: 3.5rem;
+  }
+
+  .card-display__circle-1 {
+    width: 47px;
+    height: 47px;
+  }
+
+  .card-display__circle-2 {
+    width: 21px;
+    height: 21px;
+    margin-left: 1rem;
+  }
+
+  .card-display__card-front-container {
+    padding: 2rem;
+    height: 245px;
+    max-width: 447px;
+    top: -220px;
+  }
+
+  .card-display__card-number {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+
+  .card-display__card-details {
+    margin-top: 1.2rem;
+  }
+
+  .card-display__name,
+  .card-display__expirey {
+    font-size: 0.9rem;
+  }
+}
